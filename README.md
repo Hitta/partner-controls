@@ -15,7 +15,7 @@ partner-controls
 
 > L.Control.HittaLogo.js is a control that shows the hitta.se logo on a leaflet map
 
-#### Usage
+To use, clone this repository and include the `L.Control.HittaLogo.js` or `L.Control.HittaLogo.min.js` from the `dist/controls` folder. Include this file in your project and add this setting when initiating your leaflet map
 
 ```
 L.map({ 
@@ -26,6 +26,18 @@ L.map({
     }
 });
 ```
+
+#### position
+Type: `String`
+Decides the position of the control on the map
+
+#### logoSrc
+Type: `String`
+A absolute or relative path to the hitta logo
+
+#### logoSrc2x
+Type: `String`
+A absolute or relative path to the hitta logo (used only on retina displays)
 
 
 
