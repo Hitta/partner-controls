@@ -16,7 +16,7 @@ hitta.map = L.map('map', {
     minZoom: 4,
     // Add the hitta logo control
     hittaLogo: {
-        psoition: 'topright',
+        position: 'topright',
         logoSrc: '/images/hitta-logo.png',
         logoSrc2x: '/images/hitta-logo-2x.png'
     }
