@@ -29,14 +29,17 @@ L.map({
 
 #### position
 Type: `String`
+
 Decides the position of the control on the map
 
 #### logoSrc
 Type: `String`
+
 A absolute or relative path to the hitta logo
 
 #### logoSrc2x
 Type: `String`
+
 A absolute or relative path to the hitta logo (used only on retina displays)
 
 
