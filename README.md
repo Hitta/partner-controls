@@ -8,7 +8,7 @@ partner-controls
 * `brew install node`
 * `npm install -g grunt-cli`
 * `npm install`
-
+* 
 * `grunt connect` - Starts server http://localhost:9002/
 * `grunt` (no taskname) - Will watch for changes and build
 * `grunt build` - Copies and minifies controls to dist
