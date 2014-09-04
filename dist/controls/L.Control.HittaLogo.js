@@ -20,7 +20,7 @@ L.Control.HittaLogo = L.Control.extend({
 
     _createLogoLink: function(logoImg) {
 
-        var logoLink = L.DomUtil.create('a', 'hitta-logo-control');
+        var logoLink = L.DomUtil.create('a', 'hitta-logo-link');
         logoLink.href = 'http://www.hitta.se';
         logoLink.target = '_blank';
         logoLink.appendChild(logoImg);
@@ -31,7 +31,7 @@ L.Control.HittaLogo = L.Control.extend({
 
     _createLogoImg: function() {
 
-        var logoImg = L.DomUtil.create('img', 'hitta-logo-control');
+        var logoImg = L.DomUtil.create('img', 'hitta-logo-img');
         logoImg.src = this._getLogoSrc();
         logoImg.style.width = this._logoSize.width + 'px';
         logoImg.style.height = this._logoSize.height + 'px';
@@ -50,18 +50,12 @@ L.Control.HittaLogo = L.Control.extend({
 });
 
 L.Map.addInitHook(function() {
-
     if(this.options.hittaLogo) {
-
         this.hittaLogoControl = new L.Control.HittaLogo(this.options.hittaLogo);
         this.addControl(this.hittaLogoControl);
-
     }
-
 });
 
 L.control.hittaLogo = function(options) {
-
     return new L.Control.HittaLogo(options);
-
 };
