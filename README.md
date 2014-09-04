@@ -19,7 +19,8 @@ To use, clone this repository and include the `L.Control.HittaLogo.js` or `L.Con
 
 ```
 L.map({ 
- hittaLogo: {
+    // Other leaflet settings here 
+    hittaLogo: {
         position: 'topright',
         logoSrc: '/images/hitta-logo.png',
         logoSrc2x: '/images/hitta-logo-2x.png'
