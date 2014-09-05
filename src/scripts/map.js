@@ -14,11 +14,16 @@ hitta.map = L.map('map', {
     zoom: 13,
     maxZoom: 17,
     minZoom: 4,
+    zoomControl: false,
     // Add the hitta logo control
     hittaLogo: {
-        position: 'topright',
+        position: 'topleft',
         logoSrc: '/images/hitta-logo.png',
         logoSrc2x: '/images/hitta-logo-2x.png'
+    },
+    // Add the hitta big map button
+    hittaBigMapLink: {
+        position: 'topright'
     }
 });
 

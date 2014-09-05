@@ -17,6 +17,12 @@ module.exports = function(grunt) {
             }
         },
 
+        clean: {
+            build: {
+                src: [ 'dist' ]
+            }
+        },
+
         watch: {
             scripts: {
                 files: ['src/scripts/controls/**/*.js'],
@@ -70,8 +76,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
-    grunt.registerTask('build', ['jshint', 'copy', 'uglify']);
+    grunt.registerTask('build', ['jshint', 'clean', 'copy', 'uglify']);
 
     grunt.registerTask('default', ['watch']);
 
