@@ -25,7 +25,7 @@ To use, clone this repository and include the `L.Control.HittaLogo.js` or `L.Con
 L.map({ 
     // Other leaflet settings here 
     hittaLogo: {
-        position: 'topright',
+        position: 'topleft',
         logoSrc: '/images/hitta-logo.png',
         logoSrc2x: '/images/hitta-logo-2x.png'
     }
@@ -47,6 +47,27 @@ Type: `String`
 
 A absolute or relative path to the hitta logo (used only on retina displays)
 
+### L.Control.BigMapLink.js
+
+> L.Control.BigMapLink.js is a control that shows the a link to hitta.se
+
+To use, clone this repository and include the `L.Control.BigMapLink.js` or `L.Control.BigMapLink.min.js` from the `dist/controls` folder. Include this file in your project and add this setting when initiating your leaflet map
+
+Make sure to include L.Hitta.BigMapLink.css from the folder `dist/controls`
+
+```
+L.map({ 
+    // Other leaflet settings here 
+    hittaBigMapLink: {
+        position: 'topright'
+    }
+});
+```
+
+#### position
+Type: `String`
+
+Decides the position of the control on the map
 
 
 
