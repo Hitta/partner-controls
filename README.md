@@ -4,6 +4,8 @@
 
 To use, clone this repository and include the `L.Control.HittaLogo.js` or `L.Control.HittaLogo.min.js` from the `dist/controls/L.Control.HittaLogo` folder. Include this file in your project and add this setting when initiating your leaflet map
 
+The logo can be found in the `ssrc/images` folder
+
 ```
 L.map({ 
     // Other leaflet settings here 
