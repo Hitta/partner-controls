@@ -3,18 +3,6 @@ partner-controls
 
 > Hitta.se controls to use with any leaflet map
 
-## Set up
-
-* `brew install node`
-* `npm install -g grunt-cli`
-* `npm install`
-* 
-* `grunt connect` - Starts server http://localhost:9002/
-* `grunt` (no taskname) - Will watch for changes and build
-* `grunt build` - Copies and minifies controls to dist
-
-## Controls
-
 ### L.Control.HittaLogo.js
 
 > L.Control.HittaLogo.js is a control that shows the hitta.se logo on a leaflet map
