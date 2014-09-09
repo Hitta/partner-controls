@@ -37,4 +37,8 @@ hitta.Map = function(elementId, options) {
 
     this.tileLayer.addTo(this.map);
 
+    this.getLMap = function() {
+        return this.map;
+    }
+
 };

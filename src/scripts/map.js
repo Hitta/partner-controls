@@ -48,3 +48,9 @@ var myMap = new hitta.Map('map_two', {
     minZoom: 4,
     zoomControl: false
 });
+
+// If you want the contained Leaflet map, do this:
+var leafletMap = myMap.getLMap();
+
+// Then you can do anything you can normally do with a leaflet map, like:
+leafletMap.panTo([59.31496, 18.06096]);
