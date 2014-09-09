@@ -1,18 +1,10 @@
 // namespace
 var hitta = hitta || {};
 
-// EXAMPLE 1 - With wrapper ----------------------------------------------------
-
-var myMap = new hitta.Map('map_one', {
-    center: [59.32496, 18.07096],
-    zoom: 13,
-    maxZoom: 17,
-    minZoom: 4,
-    zoomControl: false
-});
 
 
-// EXAMPLE 2 - Barebone Leaflet -----------------------------------------------
+
+// EXAMPLE 1 - Barebone Leaflet -----------------------------------------------
 
 // create a new tile layer
 hitta.tileLayer = L.tileLayer('http://static.hitta.se/tile/v3/0/{z}/{x}/{y}', {
@@ -22,7 +14,7 @@ hitta.tileLayer = L.tileLayer('http://static.hitta.se/tile/v3/0/{z}/{x}/{y}', {
 });
 
 // create the leaflet map and set center and zoom
-hitta.map = L.map('map_two', {
+hitta.map = L.map('map_one', {
     center: [59.32496, 18.07096],
     zoom: 13,
     maxZoom: 17,
@@ -42,3 +34,17 @@ hitta.map = L.map('map_two', {
 
 // add tile layer to map
 hitta.tileLayer.addTo(hitta.map);
+
+
+
+
+
+// EXAMPLE 2 - With wrapper ----------------------------------------------------
+
+var myMap = new hitta.Map('map_two', {
+    center: [59.32496, 18.07096],
+    zoom: 13,
+    maxZoom: 17,
+    minZoom: 4,
+    zoomControl: false
+});
